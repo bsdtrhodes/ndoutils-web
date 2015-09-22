@@ -5,7 +5,6 @@
 	 *
 	 * This file will contain functions to help us.
 	 */
-
 	date_default_timezone_set("America/New_York");
 
 	/*
@@ -36,11 +35,3 @@
 			return false;
 		}
 	}
-
-	/* Hash a string with a prefix */
-	function phasher($pstr) {
-		$pfix = "Tr1-";
-		$hashed_pw = sha1($pfix . $pstr);
-		return $hashed_pw;
-	}
-
